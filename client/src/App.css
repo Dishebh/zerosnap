@@ -1,0 +1,69 @@
+.App {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefc01;
+  position: relative;
+  overflow: hidden;
+}
+
+.App__body {
+  transform: scale(1);
+  background: url('https://www.pngkey.com/png/full/859-8598072_picture-freeuse-library-silhouette-mobile-at-getdrawings-cell.png')
+    no-repeat center;
+  background-size: contain;
+  height: 400px;
+  width: 250px;
+  padding: 72px;
+  padding-bottom: 76px;
+}
+
+.logout__container {
+  position: absolute;
+  bottom: 0;
+}
+
+.app__logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.app__logo > img {
+  height: 200px;
+}
+
+.phone__container {
+  position: absolute;
+  left: 0;
+  display: none;
+  top: -25px;
+}
+
+.phone {
+  font-size: 600px !important;
+}
+
+.logout__button {
+  text-transform: inherit !important;
+  width: 100px;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translate(-5%, -50%);
+}
+
+.logout__button a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 540px) {
+  .app__body {
+    padding: 0;
+  }
+  .app__logo {
+    display: none;
+  }
+}

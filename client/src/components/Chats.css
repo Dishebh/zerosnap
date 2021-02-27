@@ -1,0 +1,83 @@
+.chats {
+  position: relative;
+  height: 400px;
+  width: 250px;
+}
+
+.chats__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #059ee0;
+  padding: 0 10px;
+  height: 50px;
+}
+
+.chats__avatar {
+  height: 25px !important;
+  width: 25px !important;
+  cursor: pointer;
+}
+
+.chats__search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+
+.chats__input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  color: #fff;
+  flex: 1;
+}
+
+.chats__input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.chats__searchIcon {
+  color: #fff;
+  font-size: 20px !important;
+}
+
+.chats__chatIcon {
+  font-size: 20px !important;
+  color: #fff;
+  cursor: pointer;
+}
+
+.chats__posts {
+  box-shadow: 1px -7px 7px -6px rgba(0, 0, 0, 0.44);
+  margin-top: -5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: scroll;
+  height: 359px;
+  z-index: 101;
+  background-color: #fff;
+}
+
+.chats__posts::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.chats__posts {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.camera__button {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 99px;
+  padding: 2px;
+}
+
+.camera__button:hover {
+  opacity: 0.5;
+}

@@ -1,0 +1,55 @@
+.preview {
+  position: relative;
+}
+
+.preview__close {
+  position: absolute;
+  top: 0;
+  margin: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.preview__toolbarRight {
+  position: absolute;
+  right: 0;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.toolbarRightIcon {
+  margin-bottom: 8px;
+  font-size: 20px !important;
+  cursor: pointer;
+}
+
+.preview__footer {
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  right: -25px;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.preview__footer > h2 {
+  font-size: 8px;
+  margin-right: 3px;
+}
+
+.preview__sendIcon {
+  font-size: 10px !important;
+}
+
+.preview__progress {
+  height: 10px !important;
+  width: 10px !important;
+}
