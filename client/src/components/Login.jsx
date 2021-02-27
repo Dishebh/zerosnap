@@ -4,6 +4,11 @@ import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import './Login.css';
 
+const baseUrl =
+  process.env.NODE_ENV === 'production'
+    ? process.env.REACT_APP_BASE_URL_PROD
+    : process.env.REACT_APP_BASE_URL_DEV;
+
 export const Login = () => {
   const history = useHistory();
   const user = useSelector((state) => state.app && state.app.user);
@@ -28,7 +33,7 @@ export const Login = () => {
           onClick={signIn}
           className='login__button'
         >
-          <a href={`/auth/google`}>Sign In</a>
+          <a href={`${baseUrl}/auth/google`}>Sign In</a>
         </Button>
       </div>
     </div>
