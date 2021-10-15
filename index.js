@@ -12,6 +12,7 @@ const User = require('./models/User');
 
 const port = process.env.PORT || 5000;
 
+// Init express
 const app = express();
 
 app.use(cors());
